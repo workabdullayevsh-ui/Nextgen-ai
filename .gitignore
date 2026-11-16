@@ -40,3 +40,6 @@ logs/
 Thumbs.db
 .vscode/
 .idea/
+cloudflared.exe
+standalone_bot/
+build_standalone_bot.py

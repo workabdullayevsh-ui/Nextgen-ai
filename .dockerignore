@@ -1,0 +1,11 @@
+__pycache__
+*.py[cod]
+.venv
+venv
+.git
+.gitignore
+frontend/node_modules
+frontend/.next
+standalone_bot
+cloudflared.exe
+*.db
