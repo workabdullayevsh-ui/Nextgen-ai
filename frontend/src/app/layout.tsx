@@ -7,8 +7,18 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "NEXTGEN AI — Energy Intelligence",
   description:
-    "Ko‘p tashkilotli energiya intellekti platformasi: iste’mol tahlili, anomaliyalar, prognoz va asoslangan AI tahlil.",
+    "Ko‘p tashkilotli energiya intellekti platformasi: iste’mol tahlili, anomaliyalar, prognoz va asoslangan AI tahlil. Dasturchi: Shohjahon Abdullayev",
   applicationName: "NEXTGEN AI",
+  manifest: "/manifest.json",
+  icons: {
+    icon: "/icon-192.png",
+    apple: "/apple-touch-icon.png",
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "NEXTGEN AI",
+  },
 };
 
 export const viewport: Viewport = {

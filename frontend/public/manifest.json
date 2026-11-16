@@ -1,0 +1,31 @@
+{
+  "name": "NEXTGEN AI — Energy Intelligence",
+  "short_name": "NEXTGEN AI",
+  "description": "Korxona energiya intellekti platformasi: iste'mol tahlili, anomaliyalar va AI prognoz. Dasturchi: Shohjahon Abdullayev",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#080D19",
+  "theme_color": "#080D19",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/maskable-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
