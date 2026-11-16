@@ -43,3 +43,4 @@ Thumbs.db
 cloudflared.exe
 standalone_bot/
 build_standalone_bot.py
+*.idsig
