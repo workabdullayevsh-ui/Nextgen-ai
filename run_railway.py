@@ -30,6 +30,7 @@ def run_bot():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
     mode = os.environ.get("SERVICE_TYPE", "both").lower()
+    os.environ.setdefault("BOT_API_BASE_URL", f"http://127.0.0.1:{port}")
     bot_token = os.environ.get("TELEGRAM_DEMO_BOT_TOKEN") or os.environ.get("BOT_TOKEN") or "9034127736:AAFdGFFoyD5HsqWHtOP9HQ07nd-wzy-zu7k"
 
     logger.info("=" * 60)
