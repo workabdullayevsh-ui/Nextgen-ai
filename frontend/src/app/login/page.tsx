@@ -138,16 +138,39 @@ export default function LoginPage() {
             <p className="text-[11px] font-medium uppercase tracking-wide text-muted">
               {t("auth.demo_hint")}
             </p>
-            <button
-              type="button"
-              onClick={() => {
-                setEmail(DEMO.email);
-                setPassword(DEMO.password);
-              }}
-              className="mt-1.5 text-[12px] text-accent underline underline-offset-2 hover:text-ink"
-            >
-              {t("auth.demo_fill")} · {DEMO.email}
-            </button>
+            <div className="mt-2 flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setEmail(DEMO.email);
+                  setPassword(DEMO.password);
+                }}
+                className="text-[12px] text-accent underline underline-offset-2 hover:text-ink"
+              >
+                {t("auth.demo_fill")} · {DEMO.email}
+              </button>
+              <span className="text-muted/60">·</span>
+              <button
+                type="button"
+                onClick={async () => {
+                  setEmail(DEMO.email);
+                  setPassword(DEMO.password);
+                  setError(null);
+                  setSubmitting(true);
+                  try {
+                    await login(DEMO.email, DEMO.password);
+                    router.replace("/dashboard");
+                  } catch (err) {
+                    setError(err instanceof ApiError ? err : new ApiError("error", 0));
+                  } finally {
+                    setSubmitting(false);
+                  }
+                }}
+                className="text-[12px] font-semibold text-primary hover:underline underline-offset-2"
+              >
+                Tezkor kirish →
+              </button>
+            </div>
           </div>
 
           <div className="mt-6 flex flex-col gap-2 text-[12px] text-muted">

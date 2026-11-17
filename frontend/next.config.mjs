@@ -2,7 +2,7 @@
 const BACKEND =
   process.env.BACKEND_INTERNAL_URL ??
   (process.env.VERCEL
-    ? "https://abstracts-parameter-public-nurse.trycloudflare.com"
+    ? "https://pamela-messenger-null-dir.trycloudflare.com"
     : "http://127.0.0.1:8000");
 
 const nextConfig = {
